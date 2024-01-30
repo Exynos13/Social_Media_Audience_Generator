@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .centered {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+        }
+        .box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-start">
+            <a class="navbar-brand" href="/">ML-BASED AUDIENCE GENERATOR</a>
+        </div>
+    </nav>
+	<div class="centered">
+		<div class="box">
+			<h2>Enter Keywords</h2>
+			<form method="post">
+				<div class="form-group">
+					<label for="keywords">Positive Keywords</label>
+					<textarea class="form-control" id="keywords" name="keywords" placeholder="Enter keywords"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="neg_keywords">Negative Keywords</label>
+					<textarea class="form-control" id="neg_keywords" name="neg_keywords" placeholder="Enter negative keywords"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Search Similar Keywords</button>
+			</form>
+		</div>
+	</div>
+	
+	{% if audiences %}
+	<h2>Positive Keywords Provided</h2>
+	<div class="box">
+		<ul>
+			{% for keyword in initial_keywords %}
+			<li>{{ keyword }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<h2>Similar Keywords Generated</h2>
+	<div class="box">
+		<ul>
+			{% for keyword in final_keywords %}
+			<li>{{ keyword }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<h2>Negative Keywords Provided</h2>
+	<div class="box">
+		<ul>
+			{% for neg_keyword in negative_keywords %}
+			<li>{{ neg_keyword }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
+</body>
+</html>
