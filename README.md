@@ -1,5 +1,6 @@
 # Social_Media_Audience_Generator
-Website to generate audience interested in a topic from various social media website ethically utilizing APIs
+Application to generate audience interested in a topic from various social media website ethically utilizing APIs
+This model utilizes the roberta based sentiment analysis model referenced from hugging face repository
 
 
 - Application once run will search users who have posted anything positive related to the entered search term/topic
