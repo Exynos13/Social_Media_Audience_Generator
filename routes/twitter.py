@@ -36,7 +36,7 @@ MODEL=f"cardiffnlp/twitter-roberta-base-sentiment-latest"
 tokenizer=AutoTokenizer.from_pretrained(MODEL)
 model=AutoModelForSequenceClassification.from_pretrained(MODEL)
 
-BEARER_TOKEN="AAAAAAAAAAAAAAAAAAAAADh5mwEAAAAABdHgxUgpqpVQaXVzudfI%2Fn0AXpk%3DW9uQ3vp4z8NqvtJpFN1De2ULYRhiLXfK5iGeghpEvEOTyvVNzn"
+BEARER_TOKEN=""
 client = tweepy.Client(bearer_token=BEARER_TOKEN)
 
 @twitter_routes.route('/twitter_search', methods=['GET','POST'])
