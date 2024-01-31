@@ -34,17 +34,17 @@ tokenizer=AutoTokenizer.from_pretrained(MODEL)
 model=AutoModelForSequenceClassification.from_pretrained(MODEL)
 
 # for twitter
-BEARER_TOKEN="AAAAAAAAAAAAAAAAAAAAADh5mwEAAAAABdHgxUgpqpVQaXVzudfI%2Fn0AXpk%3DW9uQ3vp4z8NqvtJpFN1De2ULYRhiLXfK5iGeghpEvEOTyvVNzn"
+BEARER_TOKEN=""
 client = tweepy.Client(bearer_token=BEARER_TOKEN)
 
 # for youtube
-api_key = 'AIzaSyCYXRjbqEwAjtWH3W_WJmOFj0Xe2ZxvzOs'
+api_key = ''
 
 # Initialize PRAW
 reddit = praw.Reddit(
-    client_id='X4FiAmYWrTMYh75irHpzDg',
-    client_secret='-ydtKNqrxp2opc5M-K6vaQ9Jh3lojg',
-    user_agent='AMWTech'
+    client_id='',
+    client_secret='',
+    user_agent=''
 )
 
 @all_routes.route('/all_search', methods=['GET','POST'])
