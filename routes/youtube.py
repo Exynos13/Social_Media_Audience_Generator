@@ -27,7 +27,7 @@ model=AutoModelForSequenceClassification.from_pretrained(MODEL)
 
 youtube_routes = Blueprint('youtube_routes', __name__)
 
-api_key = 'AIzaSyCYXRjbqEwAjtWH3W_WJmOFj0Xe2ZxvzOs' 
+api_key = '' 
 
 
 @youtube_routes.route('/youtube_search', methods=['GET','POST'])
