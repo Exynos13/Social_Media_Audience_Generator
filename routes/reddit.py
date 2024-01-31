@@ -33,9 +33,9 @@ model=AutoModelForSequenceClassification.from_pretrained(MODEL)
 
 # Initialize PRAW
 reddit = praw.Reddit(
-    client_id='X4FiAmYWrTMYh75irHpzDg',
-    client_secret='-ydtKNqrxp2opc5M-K6vaQ9Jh3lojg',
-    user_agent='AMWTech'
+    client_id='',
+    client_secret='',
+    user_agent=''
 )
 
 @reddit_routes.route('/reddit_search', methods=['GET','POST'])
