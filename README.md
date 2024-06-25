@@ -2,7 +2,7 @@
 ## Description
 Audience_Generator is a web application designed to create targeted audience profiles based on user-entered keywords. The application retrieves data from social media platforms using ethical practices and APIs, analyzes the sentiment using a RoBERTa-based transformer model, and selects users with positive sentiments to form a curated audience. This tool is ideal for marketers, researchers, and social media managers looking to engage with a positively inclined audience.
 
-![Screenshot of Audience_Generator](screenshots/home.jpg)
+![Screenshot of Audience_Generator](screenshots/home.jpeg)
 
 
 - Application once run will search users who have posted anything positive related to the entered search term/topic
