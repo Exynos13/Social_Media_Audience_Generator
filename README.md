@@ -1,6 +1,8 @@
-# Social_Media_Audience_Generator
-Application to generate audience interested in a topic from various social media website ethically utilizing APIs
-This model utilizes the roberta based sentiment analysis model referenced from hugging face repository
+# Audience_Generator
+## Description
+Audience_Generator is a web application designed to create targeted audience profiles based on user-entered keywords. The application retrieves data from social media platforms using ethical practices and APIs, analyzes the sentiment using a RoBERTa-based transformer model, and selects users with positive sentiments to form a curated audience. This tool is ideal for marketers, researchers, and social media managers looking to engage with a positively inclined audience.
+
+![ScreenShot](https://raw.github.com/Exynos13/Social_Media_Audience_Generator/screenshots/home.jpeg)
 
 
 - Application once run will search users who have posted anything positive related to the entered search term/topic
