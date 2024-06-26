@@ -17,7 +17,7 @@ Audience_Generator is a web application designed to create targeted audience pro
 ![Screenshot of Sentiment Analysis](screenshots/Final_users.jpeg)
 
 
-## Data Collection API 
+## Data Collection for APIs 
 - Application once run will search users who have posted anything positive related to the entered search term/topic
 * For Reddit and Twitter it will search the best posts related to the topic
 * For youtube it will search the video related to the topic and return comments in that video  
