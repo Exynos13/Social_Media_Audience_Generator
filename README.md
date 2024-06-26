@@ -1,5 +1,5 @@
 # Machine_Learning_Audience_Generator
-<img src="https://img.shields.io/static/v1?label=Python&message=3.18&color=green?style=plastic&logo=appveyor" />
+<img src="https://img.shields.io/static/v1?label=Python&message=3.11&color=green?style=plastic&" />
 
 ## Description
 Audience_Generator is a web application designed to create targeted audience profiles based on user-entered keywords. The application retrieves data from social media platforms using ethical practices and APIs, analyzes the sentiment using a RoBERTa-based transformer model, and selects users with positive sentiments to form a curated audience. This tool is ideal for marketers, researchers, and social media managers looking to engage with a positively inclined audience.
